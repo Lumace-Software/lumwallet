@@ -22,7 +22,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, Sp
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
-    #path('wallets/', include('wallets.urls')),
+    path('wallets/', include('wallets.urls')),
     # REST API Token Authentication
     path('api/auth/', include('rest_framework.urls')),
     path('api/token/auth/', views.obtain_auth_token),
